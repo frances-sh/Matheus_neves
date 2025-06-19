@@ -14,6 +14,9 @@
             --accent: #F0F0F0;
             --highlight: rgba(255, 255, 255, 0.08);
             --primary-gradient: linear-gradient(135deg, #6EE7B7, #3B82F6);
+            --linkedin-blue: #0A66C2;
+            --github-orange: #F05033;
+            --resume-blue: #1E3A8A;
         }
         
         * {
@@ -135,6 +138,7 @@
             border: 1px solid var(--black-700);
             background: var(--black-700);
             color: var(--accent);
+            transform: scale(1);
         }
         
         .btn i {
@@ -143,20 +147,35 @@
         }
         
         .btn:hover {
-            background: var(--black-600);
-            transform: translateY(-2px);
-            border-color: var(--black-600);
+            transform: translateY(-2px) scale(1.02);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         
-        .btn-primary {
-            background: var(--primary-gradient);
-            border: none;
-            color: white;
+        .btn-linkedin {
+            border: 1px solid rgba(10, 102, 194, 0.3);
         }
         
-        .btn-primary:hover {
-            background: linear-gradient(135deg, #5FD9A8, #2B6EE0);
+        .btn-linkedin:hover {
+            background-color: var(--linkedin-blue);
+            border-color: var(--linkedin-blue);
+        }
+        
+        .btn-github {
+            border: 1px solid rgba(240, 80, 51, 0.3);
+        }
+        
+        .btn-github:hover {
+            background-color: var(--github-orange);
+            border-color: var(--github-orange);
+        }
+        
+        .btn-resume {
+            border: 1px solid rgba(30, 58, 138, 0.3);
+        }
+        
+        .btn-resume:hover {
+            background-color: var(--resume-blue);
+            border-color: var(--resume-blue);
         }
         
         .skills {
@@ -233,15 +252,15 @@
         <div class="divider"></div>
         
         <div class="btn-container">
-            <a href="https://www.linkedin.com/in/seuperfil" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/seuperfil" class="btn btn-linkedin" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin-in"></i> LinkedIn
             </a>
             
-            <a href="https://github.com/seuusuario" class="btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/seuusuario" class="btn btn-github" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-github"></i> GitHub
             </a>
             
-            <a href="https://1drv.ms/w/c/acc41b791c80eded/EW7il-Gbt2tFoCCAmPIfHNABxm-xgBGdzEWUuiul9OUbVg?e=Il4a0z" class="btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://1drv.ms/w/c/acc41b791c80eded/EW7il-Gbt2tFoCCAmPIfHNABxm-xgBGdzEWUuiul9OUbVg?e=Il4a0z" class="btn btn-resume" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-alt"></i> Currículo
             </a>
         </div>
