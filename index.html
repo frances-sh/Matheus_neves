@@ -279,5 +279,19 @@
             Disponível para oportunidades profissionais • 2024
         </div>
     </div>
+
+    <!-- Script para verificar links -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[target="_blank"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    console.log(`Link verificado: ${this.href}`);
+                    // Adicione aqui qualquer lógica adicional de verificação
+                });
+            });
+        });
+    </script>
 </body>
 </html>
